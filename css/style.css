@@ -1,0 +1,245 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#07111d;
+  color:white;
+}
+
+.hero{
+
+  min-height:50vh;
+
+  background:
+    radial-gradient(circle at top, #567a2a,transparent 60%),
+    rgba(38, 113, 113, 0.63);
+
+}
+
+.navbar{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:30px 80px;
+
+}
+
+.logo{
+
+  font-size:30px;
+
+  font-weight:bold;
+
+  color:#4ea3ff;
+
+}
+
+.navbar ul{
+
+  display:flex;
+
+  gap:40px;
+
+  list-style:none;
+
+}
+
+.navbar a{
+
+  color:white;
+
+  text-decoration:none;
+
+  transition:.3s;
+
+}
+
+.navbar a:hover{
+
+  color:#4ea3ff;
+
+}
+
+.hero-content{
+
+  height:40vh;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+}
+
+.hero h1{
+
+  font-size:72px;
+
+  margin:15px;
+
+}
+
+.hero h2{
+
+  color:#4ea3ff;
+
+  margin-bottom:20px;
+
+}
+
+.hero p{
+
+  width:600px;
+
+  max-width:90%;
+
+  line-height:1.8;
+
+  color: #d0d7f3;
+
+}
+
+.buttons{
+
+  margin-top:40px;
+
+  display:flex;
+
+  gap:20px;
+
+}
+
+button{
+
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background: #007bff;
+
+  color:white;
+
+  cursor:pointer;
+
+  font-size:17px;
+
+  transition:.3s;
+
+}
+
+button:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:0 10px 30px #4ea3ff66;
+
+}
+
+.outline{
+
+  background:transparent;
+
+  border:2px solid #4ea3ff;
+
+}
+
+.skills{
+
+  padding:100px;
+
+  text-align:center;
+
+}
+
+.cards{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+  gap:25px;
+
+  margin-top:60px;
+
+}
+
+.card{
+
+  padding:40px;
+
+  border-radius:20px;
+
+  background: rgba(143, 188, 143, 0.76);
+
+  transition:.4s;
+
+  font-size:22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.card img{
+  width:50px;
+  height:50px;
+}
+
+.card:hover{
+
+  transform:translateY(-10px);
+
+  background: #1c70c6;
+
+}
+
+.projects{
+
+  padding:100px;
+
+}
+
+.project-card{
+
+  margin-top:40px;
+
+  padding:40px;
+
+  border-radius:20px;
+  color: whitesmoke;
+  background: rgba(204, 74, 209, 0.63);
+
+  transition:.4s;
+
+}
+.projectLink{
+  display: block;
+  text-decoration: none;
+  color:white;
+}
+.projectLink:hover{
+  color: #000000;
+  font-weight: bold;
+}
+.project-card:hover{
+
+  transform:scale(1.02);
+
+
+}
