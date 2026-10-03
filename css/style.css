@@ -2,6 +2,10 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  cursor: url('../img/catClosed.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
+
 }
 
 body{
@@ -10,6 +14,11 @@ body{
   background-image: url("../img/deskBackground.gif");
   background-size: cover;
   background-position: center center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+
+
 }
 
 .hero{
@@ -20,8 +29,48 @@ body{
     radial-gradient(circle at top, #567a2a,transparent 60%),
     rgba(38, 113, 113, 0.63);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
 }
 
+.hero-content{
+  width:100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero-content h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 10px 0;
+}
+
+.hero-content img {
+  width: clamp(80px, 15vw, 150px);
+  height: auto;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 10px 0;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin: 10px 0;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  line-height: 1.5;
+}
 .skills h2{
   font-family: cursive;
 }
@@ -224,7 +273,7 @@ button:hover{
   background-image: url("../img/poemPreview.PNG");
   background-size: cover;
    background-position: center center;
-}
+ }
 
 .project-card{
 
@@ -255,4 +304,29 @@ button:hover{
   transform:scale(1.02);
 
 
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .hero-content {
+    padding: 25px 15px;
+  }
+
+  .hero-content img {
+    width: 90px;
+  }
+}
+
+@keyframes cursor-anim {
+  0% {
+    cursor: url('img/catOpen.png'), auto;
+  }
+  50% {
+    cursor: url('img/catClosed.png'), auto;
+  }
+  100% {
+    cursor: url('img/catOpen.png'), auto;
+  }
 }
