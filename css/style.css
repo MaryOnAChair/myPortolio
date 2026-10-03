@@ -7,7 +7,7 @@
 body{
   font-family:'Poppins',sans-serif;
   color:white;
-  background-image: url("img/deskBackground.gif");
+  background-image: url("../img/deskBackground.gif");
   background-size: cover;
   background-position: center center;
 }
@@ -221,7 +221,7 @@ button:hover{
 
 }
  #recent-work {
-  background-image: url("img/poemPreview.PNG");
+  background-image: url("../img/poemPreview.PNG");
   background-size: cover;
    background-position: center center;
 }
