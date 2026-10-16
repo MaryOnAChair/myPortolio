@@ -2,10 +2,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  cursor: url('../img/catClosed.png'), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
-
 }
 
 body{
@@ -275,6 +271,20 @@ button:hover{
    background-position: center center;
  }
 
+ #recent-work:hover {
+   background-image: url("../img/poetryNature.PNG");
+ }
+
+
+ #featured-work {
+   background-image: url("../img/resourcesMoto.PNG") ;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ #featured-work:hover {
+   background-image: url("../img/motoWebsiteLogin.PNG");
+ }
 .project-card{
 
   margin-top:40px;
